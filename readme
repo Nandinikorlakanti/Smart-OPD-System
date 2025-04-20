@@ -1,0 +1,86 @@
+# Smart OPD System with Virtual Queue for Optimized Healthcare Delivery
+
+## 📌 Project Overview
+The **Smart OPD System** is a web-based healthcare management solution designed to automate and optimize outpatient services. It offers features like virtual queue scheduling, AI-powered disease prediction, chatbot support, and real-time hospital resource tracking.
+
+Developed as part of a final year B.Tech project in **Computer Science Engineering (Artificial Intelligence & Machine Learning)**, the system aims to improve patient care, reduce waiting times, and streamline hospital administration.
+
+---
+
+## 🚀 Key Features
+- 🧠 **AI-Based Disease Prediction** using Support Vector Machine (SVM)
+- ⏳ **Virtual Queue Management** based on patient priority
+- 🛏️ **Real-Time Bed Availability Tracking**
+- 💬 **NLP Chatbot (NutriBot)** for diet and symptom-based medical assistance
+- 👨‍⚕️ **Role-Based Access Control** (Admin, Doctor, Patient)
+- 📋 **Appointment Booking & Consultation Tracking**
+- 📈 **Admin Dashboard** with statistics and reports
+
+---
+
+## ⚙️ Tech Stack
+
+| Component        | Technology                   |
+|------------------|------------------------------|
+| Frontend         | HTML, CSS, JavaScript        |
+| Backend          | Django (Python)              |
+| Database         | SQLite                       |
+| AI/ML Libraries  | Scikit-Learn, TensorFlow     |
+| Chatbot NLP      | Custom NLP with Python       |
+| REST API Testing | Postman                      |
+| Version Control  | Git & GitHub                 |
+
+---
+
+## 🧠 Machine Learning
+
+### 🎯 Models Used
+- **Support Vector Machine (SVM)** for:
+  - Heart Disease Prediction
+  - Diabetes Prediction
+  - Parkinson’s Disease Prediction
+
+### 📊 Datasets
+| Disease         | Dataset Source     | Records | Features Used                     |
+|----------------|--------------------|---------|-----------------------------------|
+| Heart Disease  | UCI Cleveland      | ~303    | Age, Cholesterol, ECG, BP, etc.   |
+| Diabetes       | PIMA Indian        | ~768    | Glucose, BMI, Insulin, Pregnancies|
+| Parkinson’s    | UCI Parkinson’s    | ~195    | Vocal features, jitter, frequency |
+
+---
+
+## 📂 Modules
+
+### 👤 Patient Module
+- Register/Login
+- Book Appointments
+- Access NutriBot Chatbot
+- View Reports and Medical History
+
+### 🩺 Doctor Module
+- View Appointment Queue
+- Predict Disease Using ML
+- Record Diagnosis & Prescriptions
+
+### 🛠️ Admin Module
+- Manage Doctor Profiles & Schedules
+- Monitor Appointments & Beds
+- Generate Reports & Stats
+
+---
+
+## 🛠️ Installation & Setup
+
+### Requirements
+- Python 3.8+
+- pip
+- Virtualenv (optional)
+
+### Steps
+```bash
+git clone https://github.com/your-username/smart-opd-system.git
+cd smart-opd-system
+pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
